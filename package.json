@@ -1,0 +1,23 @@
+{
+  "name": "vanilla-js-spa",
+  "version": "1.0.0",
+  "description": "A Single Page Application using Vanilla Javascript and NodeJS",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "SPA",
+    "Javascript",
+    "NodeJS",
+    "Node"
+  ],
+  "author": "Piyush Pushkar",
+  "license": "MIT"
+}
