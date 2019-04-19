@@ -1,10 +1,5 @@
 import { Router } from './router.js';
 
-const users = [{
-    username: 'piyush',
-    password: 'piyush123'
-}];
-
 const router = new Router();
 const requestedPath = window.location.hash.replace('#/', '') || '';
 console.log(requestedPath);
