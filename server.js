@@ -7,7 +7,7 @@ const userInfoFile = 'users.json';
 let users = [];
 
 app.use(bodyParser.json());
-app.use(express.static(__dirname));
+app.use(express.static(__dirname + '/dist'));
 
 function createUserDb() {
     try {
@@ -40,9 +40,6 @@ function authenticate(req, res) {
 function handleRequests(req, res) {
     if (req.url.includes('authenticate')) {
         authenticate(req, res);
-    } else {
-        const fileStream = fs.createReadStream('index.html');
-        fileStream.pipe(res);
     }
 }
 
